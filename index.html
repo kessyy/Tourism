@@ -16,7 +16,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-light navbar-dark fixed-top">
+    <nav class="navbar navbar-expand-sm bg-light fixed-top">
         <a class="navbar-brand" href="index.html">Booking</a>
         <button type="button" class="navbar-toggler bg-light" data-toggle="collapse" data-target="#nav">
             <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
     </nav>
 <header>
 	<div class="overlay"></div>
-		<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+		<video id="myVideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
 		  <source src="https://storage.googleapis.com/coverr-main/masters/Moving-Forward.mp4" type="video/mp4">
 		</video>
 		<div class="container h-100">
@@ -100,8 +100,8 @@
             Explore our top destinations.
         </p>
 
-        <div class="" id="">
-            <ul class="img-gallery">
+        <div class="gallery" id="">
+            <!-- <ul class="img-gallery">
                 <li><a href="#"><img src="images/burundi.jpg">
                     <div class="box_data">
                         <span>Burundi</span>
@@ -132,7 +132,25 @@
                         <span>Tanzania</span>
                     </div></a>
                 </li>
-            </ul>
+			</ul> -->
+			<div class="gallery__image span-row">
+				<img src="images/madagascar.jpg" alt="">
+			</div>
+			<div class="gallery__image span-col">
+				<img src="images/tanzania.jpg" alt="">
+			</div>
+			<div class="gallery__image ">
+				<img src="images/kenya.jpg" alt="">
+			</div>
+			<div class="gallery__image ">
+				<img src="images/Kabale.jpg" alt="">
+			</div>
+			<!-- <div class="gallery__image ">
+				<img src="images/Kabale.jpg" alt="">
+			</div>
+			<div class="gallery__image ">
+				<img src="images/Kabale.jpg" alt="">
+			</div> -->
         </div>
     </div>
 </section> 
@@ -302,7 +320,6 @@
 </section> 
 
 	<div class="subscribe section-wrapper">
-		<!-- <a class="brand-logo" href="index.html" title="HOME"></i> Booking</a> -->
 		<p class="subscribe-now">
 			Subscribe to our Newsletter
 		</p>
@@ -328,27 +345,24 @@
 	<footer>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-xs-4">
+				<div class="col-4">
 					<div class="text-left">
-						&copy; Copyright Booking
+						<p>&copy; <span class="year"></span> Booking</p>
 					</div>
 				</div>
-				<div class="col-md-4 col-xs-4">
-					Designed by <a href="http://www.github.com/......."> Insert name </a>
+				<div class="col-4">
+					Designed by <a href="http://www.github.com/......."> Rachael </a>
 				</div>
-				<!-- <div class="col-md-4 col-xs-4">
+				<div class="col-4">
 					<div class="top">
-						<a href="#header">
+						<a href="about.html#header">
 							<i class="fa fa-arrow-up"></i>
 						</a>
 					</div>
-				</div> -->
+				</div>
 			</div>
 		</div>		
-	</footer> 
-    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
+	</footer>
 			
 </body>
 </html>

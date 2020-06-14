@@ -2,7 +2,6 @@ body
 {
 	font-family: 'Open Sans', sans-serif;
 	overflow-x: hidden;
-	/* color: #fff; */
 }
 .img-gallery li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
 .img-gallery{ padding:0;display: flow-root;}
@@ -77,6 +76,9 @@ p{
 p:hover{
 	cursor: default;
 }
+.navbar{
+	color:#60c9eb
+}
 .navbar-expand-sm .navbar-toggler {
 	background: #fff;
 }
@@ -106,15 +108,15 @@ p:hover{
     text-transform: uppercase;
 }
 .navbar-expand-sm .navbar-nav>li>a{
-	/* color: #60c9eb; */
+	color: #60c9eb;
     padding-right: 0px;
-    /* padding-left: 20px; */
     border: 1px ;
-    font-size: 15px;
+    font-size: 20px;
     letter-spacing: 1px;
 }
 .navbar-expand-sm .navbar-nav>li>a:hover{
 	color: #60c9eb;
+	font-size: 22px;
 }
 .navbar-expand-sm .navbar-nav>li>a:focus, .navbar-expand-sm .navbar-nav>li>a:hover{
 	color: #60c9eb;
@@ -129,7 +131,9 @@ p:hover{
     color: #60c9eb;
     background: #e8f9ff;
 }
-
+.navbar-toggler-icon{
+	background-color: #60c9eb;
+}
 header {
 	position: relative;
 	background-color: black;
@@ -407,20 +411,20 @@ footer a:hover, footer a:focus{
 }
 
 @media (max-width: 991px){
-	.offer-cta{
+	/* .offer-cta{
 		background: url("../images/cta-1.png") bottom left no-repeat;
 	}
 	.offering{
 		padding-bottom: 300px;
-	}
+	} */
 }
 @media (max-width: 480px){
-	.slider-item{
+	/* .slider-item{
 		background-image: none !important;
 	}
 	.slide{
 		height: auto;
-	}
+	} */
 	.intro{
 		max-height: 627px;
 	}
@@ -430,4 +434,41 @@ footer a:hover, footer a:focus{
 	.navbar-default .navbar-brand{
 		padding-left: 15px;
 	}
+}
+@media (min-width: 768px) {
+	.gallery {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-template-rows: repeat(2, 200px);
+		grid-gap: 10px;
+   }
+}
+@media (min-width: 992px) {
+	.gallery {
+		grid-template-rows: repeat(2, 250px);
+   }
+}
+.gallery__image {
+	width: 100%;
+	overflow: hidden;
+	margin: 0 auto;
+}
+.gallery__image img {
+	width: 120%;
+}
+@media (min-width: 1280px) {
+	.gallery__image img {
+		width: 100%;
+   }
+}
+.span-row {
+	grid-row: 1 / span 2;
+}
+.span-col {
+	grid-column: 2 / span 2;
+}
+@media (min-width: 992px) {
+	.span-col img {
+		transform: translateY(-100px);
+   }
 }
