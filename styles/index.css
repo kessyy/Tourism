@@ -264,8 +264,7 @@ header .overlay {
 }
 
 .subscribe{
-	text-align: center;
-	left: 50%;
+	text-align: center !important;
 }
 /* .subscribe{
 	position: relative;
